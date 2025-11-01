@@ -1,4 +1,4 @@
-## 🔹 **1️⃣ Array Definition**
+## **Array Definition**
 
 👉 **Array** হলো এমন একটি **special object**, যা একাধিক ডেটা একসাথে একটি ভেরিয়েবল এ সংরক্ষণ করতে সাহায্য করে।  
 প্রতিটি ডেটার একটি **index number** থাকে, যা 0 থেকে শুরু হয়।
@@ -17,7 +17,7 @@ let fruits = ["Apple", "Banana", "Mango"];
 
 ---
 
-## 🔹 **2️⃣ Array Syntax**
+## **Array Syntax**
 
 ```javascript
 let arrayName = [item1, item2, item3, ...];
@@ -33,7 +33,7 @@ let mix = [10, "Text", true, {name: "Saiful"}, [1, 2, 3]];
 
 ---
 
-## 🔹 **3️⃣ Array তৈরি করার বিভিন্ন উপায়**
+## **Array তৈরি করার বিভিন্ন উপায়**
 
 |পদ্ধতি|উদাহরণ|মন্তব্য|
 |---|---|---|
@@ -45,7 +45,7 @@ let mix = [10, "Text", true, {name: "Saiful"}, [1, 2, 3]];
 
 ---
 
-## 🔹 **4️⃣ Array Access**
+## **Array Access**
 
 ```javascript
 let cars = ["BMW", "Toyota", "Tesla"];
@@ -54,7 +54,7 @@ console.log(cars[0]); // BMW
 console.log(cars[2]); // Tesla
 ```
 
-### ⚠️ যদি index না থাকে:
+> ⚠️ যদি index না থাকে:
 
 ```javascript
 console.log(cars[5]); // undefined
@@ -62,7 +62,7 @@ console.log(cars[5]); // undefined
 
 ---
 
-## 🔹 **5️⃣ Array Update**
+## **Array Update**
 
 ```javascript
 cars[1] = "Honda";
@@ -71,7 +71,7 @@ console.log(cars); // ["BMW", "Honda", "Tesla"]
 
 ---
 
-## 🔹 **6️⃣ Array Length**
+## **Array Length**
 
 ```javascript
 let fruits = ["Apple", "Banana", "Mango"];
@@ -80,7 +80,7 @@ console.log(fruits.length); // 3
 
 ---
 
-## 🔹 **7️⃣ Array Add/Remove Elements**
+## **Array Add/Remove Elements**
 
 |Method|কাজ|উদাহরণ|
 |---|---|---|
@@ -99,7 +99,7 @@ fruits.pop();          // ["Banana","Mango"]
 
 ---
 
-## 🔹 **8️⃣ Array Method (Common & Useful)**
+## **Array Method (Common & Useful)**
 
 ### 🔸 concat()
 
@@ -181,7 +181,7 @@ console.log(arr.lastIndexOf("A"));  // 2
 
 ---
 
-## 🔹 **9️⃣ Array Search Methods**
+## **Array Search Methods**
 
 |Method|কাজ|
 |---|---|
@@ -201,7 +201,7 @@ console.log(found); // 30
 
 ---
 
-## 🔹 **🔟 Array Sort**
+## **Array Sort**
 
 ```javascript
 let arr = [30, 4, 100, 25];
@@ -209,7 +209,7 @@ arr.sort();
 console.log(arr); // [100,25,30,4] ❌ (alphabetical)
 ```
 
-### ✅ সংখ্যাগতভাবে sort করতে:
+##### সংখ্যাগতভাবে sort করতে:
 
 ```javascript
 arr.sort((a,b)=>a-b); // Ascending
@@ -218,7 +218,7 @@ arr.sort((a,b)=>b-a); // Descending
 
 ---
 
-## 🔹 **11️⃣ Array Iterations**
+## **Array Iterations**
 
 |Method|কাজ|Return|
 |---|---|---|
@@ -246,7 +246,7 @@ console.log(sum); // 15
 
 ---
 
-## 🔹 **12️⃣ Array Reference**
+## **Array Reference**
 
 Array হলো **reference type**, তাই assign করলে একই জায়গায় রেফার করে।
 
@@ -266,7 +266,7 @@ let arr2 = arr1.slice();
 
 ---
 
-## 🔹 **13️⃣ Array Const**
+## **Array Const**
 
 Const দিয়ে Array ঘোষণা করলে পুরো array পরিবর্তন করা যায় না —  
 তবে এর ভিতরের elements পরিবর্তন করা যায়।
@@ -280,7 +280,7 @@ arr.push(4); // ✅ Allowed
 
 ---
 
-## 🔹 **14️⃣ Multi-Dimensional Array (Array inside Array)**
+## **Multi-Dimensional Array (Array inside Array)**
 
 ```javascript
 let matrix = [
@@ -294,19 +294,19 @@ console.log(matrix[1][2]); // 6
 
 ---
 
-## 🔹 **15️⃣ Common Mistakes & Best Practices**
+## **Common Mistakes & Best Practices **
 
-|ভুল|সঠিক|
-|---|---|
-|Array compare করতে `==` বা `===` ব্যবহার করা|সবসময় `.every()` বা `.join()` ব্যবহার করে তুলনা করো|
-|সরাসরি array copy করা|`slice()` বা `concat()` দিয়ে copy করো|
-|`new Array(5)` ব্যবহার|`Array.of(5)` ব্যবহার করো|
-|Index ভুলভাবে ব্যবহার|সর্বদা `arr.length` দেখে loop চালাও|
-|Empty slot রাখা|Avoid sparse arrays (যেমন `[1,,3]`)|
+| ভুল                                          | সঠিক                                                     |
+| -------------------------------------------- | -------------------------------------------------------- |
+| Array compare করতে `==` বা `===` ব্যবহার করা | সবসময় `.every()` বা `.join()` ব্যবহার করে তুলনা করতে হবে |
+| সরাসরি array copy করা                        | `slice()` বা `concat()` দিয়ে copy করতে হবে               |
+| `new Array(5)` ব্যবহার                       | `Array.of(5)` ব্যবহার করতে হবে                           |
+| Index ভুলভাবে ব্যবহার                        | সর্বদা `arr.length` দেখে loop চালাতে হবে                 |
+| Empty slot রাখা                              | Avoid sparse arrays (যেমন `[1,,3]`)                      |
 
 ---
 
-## 🔹 **16️⃣ Summary Table**
+## **Summary Table**
 
 |বিষয়|কাজ|
 |---|---|
@@ -322,6 +322,3 @@ console.log(matrix[1][2]); // 6
 |Multi Array|nested array support করে|
 
 ---
-
-চাও কি আমি পরের নোটে **“JavaScript String (Basic to Advance, with all methods like slice, substring, replace, split, trim, etc.)”** তৈরি করি?  
-এটি array এর পরের সবচেয়ে গুরুত্বপূর্ণ chapter।
