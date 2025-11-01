@@ -290,7 +290,7 @@ typeof null;              // "object" ⚠️ (JS bug)
 
 ---
 
-## 🌟 **Final Note: Best Practice Tips**
+## **Final Note: Best Practice Tips**
 
 1. Object literal ব্যবহার করা সবচেয়ে ভালো।
 2. Property নামের মধ্যে space থাকলে quote দেয়া।
