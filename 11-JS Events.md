@@ -40,6 +40,21 @@ JavaScript এ ইভেন্ট হ্যান্ডেল করার ৩�
 <button onclick="alert('Button Clicked!')">Click Me</button>
 ```
 
+#### Examples:
+```HTML
+	<button onclick="sub()"class="sub btn btn-primary justify-content-around">
+		<i class="fab fa-youtube"></i>
+		Subscribe
+	</button>
+```
+
+```js
+	function sub() {
+	  document.getElementById("txt").innerHTML = "Subscribed";
+	}
+```
+
+
 ⚠️ **Cons:** HTML ও JS একসাথে মেশানো ভালো practice নয়।
 
 ---
