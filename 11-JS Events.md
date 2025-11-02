@@ -18,13 +18,17 @@
 
 ## **Event এর ধরন (Types of Events)**
 
-|Event Type|Description|Example|
-|---|---|---|
-|Mouse Events|মাউসের কাজের সাথে সম্পর্কিত|`onclick`, `onmouseover`, `onmouseout`|
-|Keyboard Events|কীবোর্ডের কাজের সাথে সম্পর্কিত|`onkeydown`, `onkeyup`, `onkeypress`|
-|Form Events|ফর্মের কাজের সাথে সম্পর্কিত|`onsubmit`, `onchange`, `onfocus`, `onblur`|
-|Window Events|ব্রাউজার বা উইন্ডো ইভেন্ট|`onload`, `onresize`, `onscroll`, `onunload`|
-|Clipboard Events|কপি-পেস্ট সম্পর্কিত|`oncopy`, `oncut`, `onpaste`|
+| Event Type         | Description                    | Example                                                                                                                         |
+| ------------------ | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| Mouse Events       | মাউসের কাজের সাথে সম্পর্কিত    | `onclick`, `ondblclick`, `onmouseover`, `onmouseenter`, `onmouseleave`, `onmouseout`, `onmousedown`, `onmouseup`, `onmousemove` |
+| Keyboard Events    | কীবোর্ডের কাজের সাথে সম্পর্কিত | `onkeydown`, `onkeyup`, `onkeypress`, `oninput`                                                                                 |
+| Form Events        | ফর্মের কাজের সাথে সম্পর্কিত    | `onsubmit`, `onchange`, `onfocus`, `onblur`, `oninput`, `onreset`                                                               |
+| Window Events      | ব্রাউজার বা উইন্ডো ইভেন্ট      | `onload`, `onresize`, `onscroll`, `onunload`, `onbeforeunload`, `onerror`                                                       |
+| Clipboard Events   | কপি-পেস্ট সম্পর্কিত            | `oncopy`, `oncut`, `onpaste`                                                                                                    |
+| Drag & Drop Events | ড্র্যাগ ও ড্রপ সম্পর্কিত       | `ondragstart`, `ondrag`, `ondragenter`, `ondragleave`, `ondragover`, `ondrop`, `ondragend`                                      |
+| Media Events       | অডিও/ভিডিও element সম্পর্কিত   | `onplay`, `onpause`, `onended`, `ontimeupdate`, `onvolumechange`                                                                |
+| Touch Events       | টাচ স্ক্রিনের সাথে সম্পর্কিত   | `ontouchstart`, `ontouchmove`, `ontouchend`, `ontouchcancel`                                                                    |
+| Pointer Events     | মাউস ও টাচ মিলিত ইভেন্ট        | `onpointerdown`, `onpointerup`, `onpointermove`, `onpointerenter`, `onpointerleave`                                             |
 
 ---
 
