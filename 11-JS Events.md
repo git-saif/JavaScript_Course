@@ -34,18 +34,23 @@ JavaScript এ ইভেন্ট হ্যান্ডেল করার ৩�
 
 ---
 
-### **Method 1: Inline Event Handler (HTML এর মধ্যে লেখা)**
+### **Method 1: Inline Event Handler**
 
 ```html
 <button onclick="alert('Button Clicked!')">Click Me</button>
 ```
 
-#### Examples:
+⚠️ **Cons:** HTML ও JS একসাথে মেশানো ভালো practice নয়।
+
+#### **Good Practice:**
+##### Example-1(Event with Basic Function):
+
 ```HTML
 	<button onclick="sub()"class="sub btn btn-primary justify-content-around">
 		<i class="fab fa-youtube"></i>
 		Subscribe
 	</button>
+	<span id="txt" class="text-success fw-bold mx-2"></span>
 ```
 
 ```js
@@ -54,8 +59,55 @@ JavaScript এ ইভেন্ট হ্যান্ডেল করার ৩�
 	}
 ```
 
+##### Example-2(Event with single Value in Function):
 
-⚠️ **Cons:** HTML ও JS একসাথে মেশানো ভালো practice নয়।
+```HTML
+	<button ondblclick="sub2()" id="txt2" class="sub btn btn-primary justify-content-around">
+		<i class="fab fa-youtube"></i>
+		Subscribe
+	</button>
+```
+
+```js
+	function sub2() {
+	  document.getElementById("txt2").style.backgroundColor = "red";
+	}
+```
+
+##### Example-3(Event with multiple Value in Function & changing Icon):
+
+```HTML
+	<button oncontextmenu="sub3()" id="txt3" class="sub btn btn-primary justify-content-around">
+		<i class="fab fa-youtube"></i>
+		Subscribe
+	</button>
+```
+
+```js
+	function sub3() {
+	  let abcd = document.getElementById("txt3");
+	  abcd.style.backgroundColor = "red";
+	  abcd.style.Color = "white";
+	  abcd.innerHTML = '<i class="fab fa-youtube bg-white text-danger"></i> You are Subscribed';
+	}
+```
+
+##### Example-4(Event with multiple Value in Function & not changing Icon):
+
+```HTML
+	<button ondblclick="sub4()" id="txt4" class="sub btn btn-primary justify-content-around">
+		<i class="fab fa-youtube"></i>
+		<span class="btn-text">Subscribe</span>
+	</button>
+```
+
+```js
+	function sub4() {
+	  const element = document.getElementById("txt4");
+	  element.style.backgroundColor = "red";
+	  element.querySelector(".btn-text").innerText = "Your are Our Subscriber!";
+	}
+```
 
 ---
 
