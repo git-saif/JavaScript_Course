@@ -113,6 +113,78 @@ JavaScript এ ইভেন্ট হ্যান্ডেল করার ৩�
 	}
 ```
 
+##### Example-4(Event with single Value in Function Advance):
+
+```HTML
+	<div class="row my-4 border p-3 g-2 gx-4">
+      <h3 class="text-center fw-bold border">Form is Here</h3>
+      <!-- Form - 1 -->
+      <div class="col-5 border ">
+          <form action="" id="form-1">
+            <h4 class="text-center">Form - 1 is Here</h4>
+            
+            <div class="mb-3 row">
+              <label for="Name" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input onkeypress="pressKey()" type="Text" class="form-control" id="inputName" placeholder="Enter Your Name">
+              </div>
+            </div>
+            
+            <div class="mb-3 row">
+              <label for="Email" class="col-sm-2 col-form-label">E-Mail</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Enter Your E-Mail">
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="Massage" class="col-sm-2 col-form-label">Massage</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="inputMassage" rows="3" placeholder="Enter Your Massage"></textarea>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="col-2 d-flex"> 
+          <h3 id="Form-1" class="text-center d-flex align-items-center"> </h3>
+          <h3 id="Form-2" class="text-center d-flex align-items-center"> </h3>
+        </div>
+
+      <!-- Form - 2 -->
+      <div class="col-5 border">
+          <form action="" id="form-2">
+          <h4 class="text-center">Form - 2 is Here</h4>
+      
+          <div class="mb-3 row">
+            <label for="Name" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input onkeypress="pressKey2() " type="Text" class="form-control" id="inputName" placeholder="Enter Your Name">
+            </div>
+          </div>
+      
+          <div class="mb-3 row">
+            <label for="Email" class="col-sm-2 col-form-label">E-Mail</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Enter Your E-Mail">
+            </div>
+          </div>
+      
+          <div class="mb-3 row">
+            <label for="Massage" class="col-sm-2 col-form-label">Massage</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" id="inputMassage" rows="3" placeholder="Enter Your Massage"></textarea>
+            </div>
+          </div>
+      
+        </form>
+        </div>
+
+  </div>
+```
+
+
 ---
 
 ### **Method 2: DOM Property Method (Script এর মধ্যে)**
