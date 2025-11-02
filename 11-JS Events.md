@@ -184,6 +184,16 @@ JavaScript এ ইভেন্ট হ্যান্ডেল করার ৩�
   </div>
 ```
 
+```js
+
+	function pressKey() {
+	  document.getElementById("Form-1").innerHTML = "Form - 1 is Typing";
+	}
+	
+	function pressKey2() {
+	  document.getElementById("Form-1").innerHTML = "Form - 2 is Typing";
+	}
+```
 
 ---
 
