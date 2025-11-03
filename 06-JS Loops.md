@@ -1,9 +1,25 @@
-## **JavaScript Loops**
+### Definition
 
 **Loop** মানে হচ্ছে কোনো কাজ বারবার করা যতক্ষণ না একটি নির্দিষ্ট শর্ত পূরণ হয়।  JavaScript-এ loop ব্যবহার করা হয় **repeated কাজ স্বয়ংক্রিয়ভাবে** করার জন্য।
 
 ---
 
+## **Types of Loop:**
+
+JavaScript -এ কয়েক ধরণের Loop আছে। সেগুলো হলো:
+
+| Loop Type              | Definition                                                  | Use Case                                  | Example                                                                                                          |
+| ---------------------- | ----------------------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **for loop**           | একটি নির্দিষ্ট সংখ্যা অনুযায়ী code block বারবার চালায়।      | যখন iteration সংখ্যা জানা থাকে।           | `js\nfor (let i = 1; i <= 5; i++) {\n console.log(i);\n}\n// Output: 1 2 3 4 5\n`                                |
+| **while loop**         | শর্ত (condition) true থাকা পর্যন্ত code block চালায়।        | iteration সংখ্যা আগে থেকে জানা না থাকলে।  | `js\nlet i = 1;\nwhile (i <= 5) {\n console.log(i);\n i++;\n}\n`                                                 |
+| **do...while loop**    | অন্তত একবার code block চালায়, তারপর condition চেক করে।      | যখন কমপক্ষে একবার কোড চালাতে হয়।          | `js\nlet i = 1;\ndo {\n console.log(i);\n i++;\n} while (i <= 5);\n`                                             |
+| **for...in loop**      | object-এর properties (keys) এর উপর iterate করে।             | object এর key-value পড়তে।                 | `js\nlet user = {name: 'Saiful', age: 25};\nfor (let key in user) {\n console.log(key + ': ' + user[key]);\n}\n` |
+| **for...of loop**      | iterable (array, string, etc) এর values এর উপর iterate করে। | array বা string এর প্রতিটি মান পড়তে।      | `js\nlet nums = [10, 20, 30];\nfor (let n of nums) {\n console.log(n);\n}\n`                                     |
+| **forEach() method**   | array এর প্রতিটি element এর জন্য function call করে।         | Array এর values process করতে।             | `js\nlet arr = [1,2,3];\narr.forEach(v => console.log(v * 2));\n// Output: 2,4,6\n`                              |
+| **break statement**    | লুপ বন্ধ করে দেয় যখন শর্ত পূরণ হয়।                          | নির্দিষ্ট condition এ loop থামাতে।        | `js\nfor (let i = 1; i <= 5; i++) {\n if (i === 3) break;\n console.log(i);\n}\n// Output: 1 2\n`                |
+| **continue statement** | লুপের বর্তমান iteration বাদ দিয়ে পরেরটিতে যায়।              | নির্দিষ্ট শর্তে কিছু iteration skip করতে। | `js\nfor (let i = 1; i <= 5; i++) {\n if (i === 3) continue;\n console.log(i);\n}\n// Output: 1 2 4 5\n`         |
+
+_________
 ## **1. for Loop**
 
 ##### Syntax:
